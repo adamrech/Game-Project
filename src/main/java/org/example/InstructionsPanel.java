@@ -32,7 +32,7 @@ public class InstructionsPanel extends JPanel {
 
         fullText = "REBEL COMMAND TRANSMISSION:\n" +
                 "------------------------------------------\n" +
-                " > Pilot, the Imperial fleet is invading our sector.\n" +
+                " > Pilot, the Imperial fleet invading our sector.\n" +
                 " > Use W, A, S, D to navigate your starfighter.\n" +
                 " > Press 'R' to fire your blaster cannons.\n" +
                 " > Reach LEVEL 5 to assault the DEATH STAR.\n\n" +
