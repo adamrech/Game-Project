@@ -4,6 +4,7 @@ package org.example;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import javax.sound.sampled.Clip;
 
 public class GamePanel extends JPanel {
     private Thread gameThread;
@@ -23,6 +24,7 @@ public class GamePanel extends JPanel {
     private boolean isGameOver = false;
     private int currentLevel = 1;
     private long lastDiveTime = 0;
+    private Clip backgroundMusic;
 
     public GamePanel(int width, int height, CardLayout cardLayout, JPanel container) {
         this.setBounds(0, 0, width, height);
@@ -88,6 +90,11 @@ public class GamePanel extends JPanel {
         if (gameThread == null || !isRunning) {
             if (isGameOver) resetGame();
             isRunning = true;
+
+            if (backgroundMusic == null || !backgroundMusic.isRunning()) {
+                backgroundMusic = SoundManager.playSound("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\background_music.wav", true);
+            }
+
             gameThread = new Thread(() -> {
                 while (isRunning) {
                     update();
@@ -101,6 +108,9 @@ public class GamePanel extends JPanel {
 
     public void stopGame() {
         isRunning = false;
+        if (backgroundMusic != null && backgroundMusic.isRunning()) {
+            backgroundMusic.stop();
+        }
     }
 
     private void update() {

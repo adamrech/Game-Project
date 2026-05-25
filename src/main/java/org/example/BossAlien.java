@@ -28,7 +28,7 @@ public class BossAlien extends GameObject {
 
         if (bossImage == null) {
             try {
-                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\mother_ship.png");
+                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\daeth_star.png");
                 if (imageFile.exists()) bossImage = ImageIO.read(imageFile);
             } catch (IOException e) {
                 System.out.println("Error loading boss image: " + e.getMessage());

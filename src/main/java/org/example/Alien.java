@@ -22,7 +22,7 @@ public class Alien extends GameObject {
 
         if (sharedAlienImage == null) {
             try {
-                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\alien.png");
+                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\imprial_normal_ship.png");
                 if (imageFile.exists()) sharedAlienImage = ImageIO.read(imageFile);
             } catch (IOException e) {
                 System.out.println("Error loading alien image: " + e.getMessage());

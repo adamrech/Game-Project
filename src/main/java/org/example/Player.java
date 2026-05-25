@@ -16,7 +16,7 @@ public class Player extends GameObject {
     public Player(int x, int y) {
         super(x, y, 60, 60);
         try {
-            File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\spaceship.png");
+            File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\rabel_ship.png");
             if (imageFile.exists()) playerImage = ImageIO.read(imageFile);
         } catch (IOException e) {
             System.out.println("Error loading player image: " + e.getMessage());

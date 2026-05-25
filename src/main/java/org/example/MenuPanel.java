@@ -80,7 +80,8 @@ public class MenuPanel extends JPanel {
         g.setColor(Color.YELLOW);
         g.setFont(new Font("Consolas", Font.BOLD, 80));
         FontMetrics metrics = g.getFontMetrics(g.getFont());
-        String title = "GALAXY ATTACK";
+        String title = "GALAXY ATTACK \n "+
+                " STAR WARS EDITION ";
         int titleX = (getWidth() - metrics.stringWidth(title)) / 2;
         g.drawString(title, titleX, getHeight() / 4 + 50);
 

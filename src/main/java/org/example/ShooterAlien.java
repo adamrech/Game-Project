@@ -21,7 +21,7 @@ public class ShooterAlien extends GameObject {
 
         if (shooterImage == null) {
             try {
-                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\alien_shooter.png");
+                File imageFile = new File("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\imprial_shooter_ship.png");
                 if (imageFile.exists()) shooterImage = ImageIO.read(imageFile);
             } catch (IOException e) {
                 System.out.println("Error loading shooter alien image: " + e.getMessage());

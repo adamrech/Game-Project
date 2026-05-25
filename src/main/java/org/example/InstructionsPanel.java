@@ -30,13 +30,14 @@ public class InstructionsPanel extends JPanel {
             System.out.println("Error loading arcade image: " + e.getMessage());
         }
 
-        fullText = "GALAXY COMMAND TRANSMISSION:\n" +
+        fullText = "REBEL COMMAND TRANSMISSION:\n" +
                 "------------------------------------------\n" +
-                " > Pilot, the alien swarm is approaching sector 7.\n" +
-                " > Use W, A, S, D to navigate your ship.\n" +
-                " > Press 'R' to fire your plasma lasers.\n" +
-                " > Reach LEVEL 5 to face the Mother Ship.\n\n" +
-                "AWAITING PILOT ACTIVATION COMMAND...";
+                " > Pilot, the Imperial fleet is invading our sector.\n" +
+                " > Use W, A, S, D to navigate your starfighter.\n" +
+                " > Press 'R' to fire your blaster cannons.\n" +
+                " > Reach LEVEL 5 to assault the DEATH STAR.\n\n" +
+                " > May the Force be with you.\n\n" +
+                "AWAITING HYPERDRIVE ACTIVATION...";
 
         int textX = width * 2 / 10;
         int textY = height * 2 / 10 + 50;
