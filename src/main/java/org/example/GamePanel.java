@@ -56,7 +56,6 @@ public class GamePanel extends JPanel {
 
         if (level == 5) {
             boss = new BossAlien(w / 2 - 100, 50);
-            SoundManager.playSound("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\boss_entrance.wav", false);
             return;
         }
 
