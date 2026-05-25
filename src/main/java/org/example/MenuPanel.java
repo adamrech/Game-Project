@@ -1,4 +1,3 @@
-// MenuPanel.java
 package org.example;
 
 import javax.imageio.ImageIO;
@@ -78,12 +77,18 @@ public class MenuPanel extends JPanel {
         }
 
         g.setColor(Color.YELLOW);
-        g.setFont(new Font("Consolas", Font.BOLD, 80));
-        FontMetrics metrics = g.getFontMetrics(g.getFont());
-        String title = "GALAXY ATTACK \n "+
-                " STAR WARS EDITION ";
-        int titleX = (getWidth() - metrics.stringWidth(title)) / 2;
-        g.drawString(title, titleX, getHeight() / 4 + 50);
+        g.setFont(FontManager.loadFont("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\arcadeclassic\\ARCADECLASSIC.TTF", 80f));
+        FontMetrics metrics1 = g.getFontMetrics(g.getFont());
+        String title1 = "GALAXY ATTACK";
+        int title1X = (getWidth() - metrics1.stringWidth(title1)) / 2;
+        int titleY = getHeight() / 4 + 50;
+        g.drawString(title1, title1X, titleY);
+
+        g.setFont(FontManager.loadFont("C:\\Users\\adams\\IdeaProjects\\game\\src\\main\\resources\\arcadeclassic\\ARCADECLASSIC.TTF", 40f));
+        FontMetrics metrics2 = g.getFontMetrics(g.getFont());
+        String title2 = " STAR  WARS  EDITION ";
+        int title2X = (getWidth() - metrics2.stringWidth(title2)) / 2;
+        g.drawString(title2, title2X, titleY + 60);
 
         if (showText) {
             g.setColor(Color.WHITE);

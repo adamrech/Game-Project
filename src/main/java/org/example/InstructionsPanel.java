@@ -41,7 +41,7 @@ public class InstructionsPanel extends JPanel {
 
         int textX = width * 2 / 10;
         int textY = height * 2 / 10 + 50;
-        int textW = width * 6 / 10;
+        int textW = width * 7 / 10;
         int textH = height * 5 / 10;
 
         instructionsArea = new JTextArea();
