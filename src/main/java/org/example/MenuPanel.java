@@ -54,7 +54,6 @@ public class MenuPanel extends JPanel {
 
         new Thread(() -> {
             while (true) {
-                showText = !showText;
                 repaint();
                 try {
                     Thread.sleep(500);
