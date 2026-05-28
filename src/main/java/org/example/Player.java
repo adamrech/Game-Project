@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Player extends GameObject {
     private int speed = 6;
-    private int lives = 5;
+    private int lives = 10;
     private boolean up, down, left, right;
     private Image playerImage;
     private long invincibilityTime = 0;
